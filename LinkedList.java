@@ -45,6 +45,7 @@ public class LinkedList implements List {
             LLNode newNode = new LLNode(obj);
             newNode.next = this.root;
             this.root = newNode;
+            size++;
         } else {
             int i = 0;
             LLNode currentNode = this.root;
@@ -120,9 +121,9 @@ public class LinkedList implements List {
 
         friend.print();
 
-//        System.out.println(friend.get(2));
-//        System.out.println(friend.remove(2));
-//        System.out.println(friend.get(2));
+        System.out.println(friend.get(2));
+        System.out.println(friend.remove(2));
+        System.out.println(friend.get(2));
 
     }
 
